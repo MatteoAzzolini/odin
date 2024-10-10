@@ -72,14 +72,21 @@ body{
         justify-content: space-between;
         align-items: center;
         min-width: 300px;
-        max-width: 50%;
         width: 70%;
         background-color: $dark-opal-color;
         border-radius: 10px;
         padding-left: 20px;
         padding-right: 20px;
         margin: 15px;
+        transition: color .4s, background-color .4s;
     }
+
+    &-machines-list-card:hover{
+        background-color: $dark-color;
+        color: $light-color;
+        cursor: pointer;
+    }
+
     &-list-card-section{
         height: 100%;
         display: flex;
@@ -94,7 +101,7 @@ body{
         }
     }
     &-list-card-element{
-        
+        font-weight: bolder;
     }
 }
 
