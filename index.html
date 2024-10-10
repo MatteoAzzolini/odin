@@ -3,61 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
-    <link rel="stylesheet" href="/assets/css/custom-style-index.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png?v=2"> <!--Messo quel ?v=2 per forzare il re-upload della favicon, altrimenti con la parola favicon non lo riconosceva piu avendogliene eliminata una-->
+    <link rel="stylesheet" href="/assets/css/model-style.css">
     <title>Odin</title>
 </head>
 <body>
-  <nav class="custom-navbar">
-    <div class="custom-navbar-group">
-      <img class="custom-navbar-group-element" src="/assets/images/odin.png" alt="odin">
-      <a class="custom-navbar-group-element" href="/index.html">Home</a>
-      <a class="custom-navbar-group-element" href="/assets/pages/machines-list.html">Machines</a>
-    </div>
-    <div class="custom-navbar-account">
-      <a class="custom-navbar-account-element" href="#">Name</a>
-      <a class="custom-navbar-account-element" href="#">Logout</a>
-    </div>
-  </nav>
-  <div class="login-container">
-     <form class="custom-login-form" action="#" method="get">
-       <img src="/assets/images/odin.png" alt="ODIN">
-       <input type="text" class="custom-login-form-textbox" placeholder="Username">
-       <input type="password" class="custom-login-form-textbox" placeholder="Password">
-       <input type="submit" class="custom-login-form-textbox-btn" value="Login">
-     </form>
-  </div>
-  <footer>2024 - All rights reserved</footer>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script>
-        const ctx = document.getElementById('myChart');
-      
-        new Chart(ctx, {
-          type: 'pie',
-          data: {
-            labels: ['AutomaticTime', 'ProductionTime', 'ErrorTime'],
-            datasets: [{
-              label: '# of Votes',
-              data: [10, 2, 3],
-              borderWidth: 1,
-              backgroundColor: [
-             'whitesmoke',
-             'lightgreen',
-             'indianred'
-            ],
-            hoverOffset: 4,
-            }]
-          },
-          options: {
-            plugins:{
-                legend: {
-                    display: true,
-                    position: 'right'
-                }
-            }
-          }
-        });
-  </script>
-  <script src="/assets/test/populate.js"></script>
+    <header>
+        <nav class="odin-main-navbar">
+            <div class="odin-main-navbar-element-box-long">
+                <a href="index.html" class="odin-main-navbar-logo-img"><img class="odin-main-navbar-logo-img" src="/assets/images/odin-logo.png" alt="Odin"></a>
+                <a class="odin-main-navbar-element-link" href="#">Machines</a>
+                <a class="odin-main-navbar-element-link" href="#">Statistics</a>
+            </div>
+            <div class="odin-main-navbar-element-box-short">
+                <a class="odin-main-navbar-element-link" href="#">Profile</a>
+                <a class="odin-main-navbar-element-link" href="#">Settings</a>
+            </div>
+        </nav>
+    </header>
+    <main id="main-container"></main>
+    <footer class="odin-footer">2024 - All Rights Reserved</footer>
+    <script src="/assets/js/login-loader.js"></script>
 </body>
 </html>

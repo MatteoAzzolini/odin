@@ -1,0 +1,62 @@
+.odin-login-form{
+    height: 500px;
+    width: 380px;
+
+    background-color: $form-opal-background;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: 1px solid $borders-std;
+    border-radius: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+    img{
+        max-height: 100px;
+    }
+
+    &-section{
+        height: 30%;
+        width: 100%;
+        min-height: 200px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &-in-text{
+        width: 80%;
+        height: 35px;
+
+        border-radius: 8px;
+
+        padding-left: 5px;
+    }
+
+    &-in-text:focus{
+        border-color: $borders-std-focused;
+        box-shadow: $borders-std-focused 10px 5px 5px;
+    }
+
+    &-btn{
+        width: 35%;
+        min-width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        transition: background-color .4s;
+    }
+
+    &-btn:hover{
+        background-color: $btn-std-focused;
+        cursor: pointer;
+    }
+    
+}
+
