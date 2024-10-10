@@ -1,0 +1,25 @@
+{
+    "machines-list":[
+        {
+            "id": 2127,
+            "type": "cutting-line",
+            "actual-recipe": "Ricetta 1",
+            "state": 1,
+            "progression": 85
+        },
+        {
+            "id": 2139,
+            "type": "cutting-line",
+            "actual-recipe": "Ricetta 2",
+            "state": 1,
+            "progression": 15
+        },
+        {
+            "id": 2106,
+            "type": "cutting-line",
+            "actual-recipe": "Ricetta 5",
+            "state": 3,
+            "progression": 25
+        }
+    ]
+}
