@@ -27,11 +27,14 @@
 
         &-logo{
             height: 20%;
+            min-height: 100px;
         }
     
         &-sites-list{
             height: 85%;
             width: 100%;
+
+            min-height: 200px;
     
             display: flex;
             flex-direction: column;
@@ -65,6 +68,8 @@
 
         &-btn{
             height: 50%;
+
+            min-height: 30px;
             margin-right: 5px;
             padding: 5px;
 
@@ -91,6 +96,8 @@
         flex-direction: column;
         justify-content: start;
         align-items: center;
+
+        padding-top: 30px;
 
         overflow-y: scroll;
     }
