@@ -7,4 +7,28 @@ var loginTemplate = `<form class="odin-login-form" method="get" action="/assets/
     <input class="odin-login-form-btn" type="submit" value="Login">
 </form>`
 
-document.getElementById("main-container").innerHTML = loginTemplate;
+function loadAsset(url,type,todo) {
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET',url);
+    xhr.responseType = type;
+
+    xhr.onload = function(){
+        todo(xhr.response);
+    };
+    xhr.send();
+
+}
+
+function populate(blob){
+    let reader = new FileReader();
+    reader.readAsText(blob);
+    reader.onload = function(){
+        alert(reader.result);
+        await document.getElementById("main-content").innerHTML = reader.result;
+    }
+    
+}
+
+
+
+loadAsset("/assets/templates/login-form.html",'blob',populate);
