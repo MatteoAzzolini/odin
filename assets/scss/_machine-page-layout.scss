@@ -64,6 +64,17 @@
         &-btn{
             height: 50%;
             margin-right: 5px;
+            padding: 5px;
+
+            border-radius: 5px;
+
+            transition: background-color .4s;
+        }
+
+        &-btn:hover{
+            background-color: $btn-std-focused;
+            font-weight: bold;
+            cursor: pointer;
         }
     }
 
