@@ -1,4 +1,4 @@
-@import 'admin-colors';
+@import 'factory-colors-presets/corstyrene-colors';
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 $font-stack: "Merriweather", serif;
 
@@ -55,7 +55,7 @@ body{
 
     &-element-link{
         text-decoration: none;
-        color: $secondary-nav;
+        color: $tertiary-nav;
     }
 
     &-element-list{
@@ -83,7 +83,7 @@ body{
     padding: 0px 20px 0px 10px;
 
     background-color: $primary-nav;
-    color: $secondary-nav;
+    color: $tertiary-nav;
 
     font-size: .6em;
 }

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png?v=2"> <!--Messo quel ?v=2 per forzare il re-upload della favicon, altrimenti con la parola favicon non lo riconosceva piu avendogliene eliminata una-->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png?v=2"> <!--Messo quel ?v=2 per forzare il re-upload della favicon, altrimenti con la parola favicon non lo riconosceva piu avendogliene eliminata una-->
     <link rel="stylesheet" href="/assets/css/model-style.css">
-    <title>Odin</title>
+    <title>Odin - Machines</title>
 </head>
 <body>
     <header>
@@ -21,8 +21,21 @@
             </div>
         </nav>
     </header>
-    <main id="main-container"></main>
+    <div class="machine-page">
+        <div class="machine-page-factory">
+            <div class="machine-page-factory-logo"><img src="/assets/images/corstyrene-logo.png" alt="Factory logo"></div>
+            <div class="machine-page-factory-sites-list">
+                <p class="machine-page-factory-sites-element">Ottana</p>
+                <p class="machine-page-factory-sites-element">Aleria</p>
+            </div>
+            <div class="machine-page-factory-settings-box">
+                <button class="machine-page-factory-btn">Add</button>
+                <button class="machine-page-factory-btn">Remove</button>
+            </div>
+        </div>
+        <main id="main-container"></main>
+    </div>
     <footer class="odin-footer">2024 - All Rights Reserved</footer>
-    <script src="/assets/js/login-loader.js"></script>
+    <script src="/assets/js/machines-list-loader.js"></script>
 </body>
 </html>
